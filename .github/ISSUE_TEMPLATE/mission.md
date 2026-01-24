@@ -3,36 +3,36 @@ name: Mission
 about: A mission with a problem-solution analysis
 title: ''
 labels: ''
-assignees: ''
-
+assignees: 'AStarCale'
 ---
-
-### A
-
-#### Problem
+## Problem
 
 The problem I am addressing on this mission is...
 
-#### Solution
+## Solution
 
 The solution that I'm addressing on this mission is...
 
-##### File Affected
+### File Affected
 
-1. `*.*`
+1. `?`
 
-#### Hierarchy
+## Hierarchy
 
-* #1
+* #10
 
-#### Tags
+## Tags
 
 Mission
 
-#### Sessions
+## A
 
-* CookingWithCale/CookingWithCale#1
+
+
+### Sessions
+
+* AStarCale/AStarCale#9
 
 ## License
 
-Copyright 2022 © [Freedom Government](https://github.com/FreedomGovernment); all rights reserved.
+Copyright [Freedom Government](https://github.com/FreedomGovernment); all rights reserved.

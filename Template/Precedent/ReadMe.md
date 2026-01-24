@@ -1,0 +1,1 @@
+This is a stub for a Pandocs Markdown file that contains all of the Superior Court precedent related to this case. This file contains the a table of content that lists all of the relevant cases. A folder is created for each precedent case that contains a Pandocs Markdown file. Each PDF shall be converted to Pandocs Markdown for faster parsing by LLM.

@@ -3,36 +3,32 @@ name: Feature request
 about: Suggest an idea for this project
 title: ''
 labels: ''
-assignees: ''
-
+assignees: 'AStarCale'
 ---
-
-### A
-
-#### Problem
+## Problem
 
 The problem this feature solves is...
 
-#### Solution
+## Solution
 
 The solution is to implement a feature that...
 
-##### File Affected
+### File Affected
 
 1. `*.*`
 
-#### Hierarchy
+### Hierarchy
 
 * #1
 
-#### Tags
+### Tags
 
 RequestFeature
 
-#### Sessions
+### Sessions
 
-* CookingWithCale/CookingWithCale#1
+* AStarCale/AStarCale#9
 
 ## License
 
-Copyright 2022 © [Freedom Government](https://github.com/FreedomGovernment); all rights reserved.
+Copyright [Freedom Government](https://github.com/FreedomGovernment); all rights reserved.

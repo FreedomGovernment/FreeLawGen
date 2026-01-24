@@ -1,0 +1,47 @@
+{
+  "name": "freelawgen",
+  "version": "0.0.1",
+  "description": "FreeLawGen is an open-source law document and campaign generator vibe coding platform and Chrome Extension that provides equal access to the legal system by leveraging Pandocs Markdown to help you refine your legal argument, timeline, evidence, calendar, milestones, law library, filings, blog, vlog, advertising, and fund raising.",
+  "main": "index.js",
+  "scripts": {
+    "github": "GITHUB_TOKEN=$GITHUB_TOKEN node cli.js",
+    "start": "webpack --watch --progress --config webpack.development.js",
+    "build": "webpack --watch --progress --config webpack.production.js",
+    "test": "jest"
+  },
+  "author": "Freedom Government",
+  "license": "Copyright Freedom Government™; most rights reserved under AStartup Strong Source-Available License. Full license available at: https://github.com/FreedomGovernment/FreeLawGen",
+  "devDependencies": {
+    "@apollo/client": "^4.1.2",
+    "@octokit/plugin-create-or-update-text-file": "^6.0.3",
+    "@octokit/rest": "^22.0.1",
+    "@types/chrome": "^0.1.36",
+    "@types/react": "^19.2.9",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.4.23",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^13.0.1",
+    "css-loader": "^7.1.2",
+    "dayjs": "^1.11.19",
+    "html-webpack-plugin": "^5.6.6",
+    "jest": "^30.2.0",
+    "postcss": "^8.5.6",
+    "postcss-loader": "^8.2.0",
+    "style-loader": "^4.0.0",
+    "tailwindcss": "^4.1.18",
+    "terser-webpack-plugin": "^5.3.16",
+    "ts-jest": "^29.4.6",
+    "ts-loader": "^9.5.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "webpack": "^5.104.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-merge": "^6.0.1"
+  },
+  "dependencies": {
+    "obs-websocket-js": "^5.0.7",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "shadcn": "^3.7.0"
+  }
+}

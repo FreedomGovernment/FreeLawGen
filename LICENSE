@@ -1,0 +1,47 @@
+# AStartup Strong Source-available License
+
+Copyright FreedomGovernment (https://freelawgen.org)™; most rights reserved,
+third-party commercialization prohibited, mandatory improvement donations,
+licensed under the AStartup Strong Source-available License that YOU MUST
+CONSENT TO at <https://github.com/FreedomGovernment/FreeLawGen>.
+
+## Purpose
+
+FreeLawGen is published for **regular people defending themselves in court**
+(self-represented / pro se litigants) and for **States** building their own
+court systems. It is NOT intended for attorneys to commercialize. This license
+keeps the tool free and open for those purposes while preventing third parties
+from profiting off derivative works without a separate paid license.
+
+## Legal Agreement
+
+This source form is source-available content — the Writings and Discoveries —
+written by and containing intellectual property belonging to the IP Owner,
+FreedomGovernment. The Writings and Discoveries consist of documents, files,
+source code, technology design files, art, trademarks, and other content
+contained in this file, folder, and the GitHub repository (the Repo), located
+at <https://github.com/FreedomGovernment/FreeLawGen>. The Writings and
+Discoveries are published under the AStartup Strong Source-available License
+(the License), which is a non-commercial, source-available license for
+educational and demonstration purposes only.
+
+To use the Writings and Discoveries for commercial purposes, you must download
+them from <https://freelawgen.org> and will be bound to the license agreed
+upon before downloading. You may use, reproduce, publicly display, and modify
+the Writings and Discoveries so long as you submit and donate fixes and
+derived intellectual property (the Donated Ideas) to the Repo as an Issue
+ticket, to become part of the Writings and Discoveries. You may not sell the
+Writings and Discoveries or otherwise profit from derivative works created
+from them — referred to as Third-party commercialization — without the express
+written permission of the copyright holder.
+
+Unless required by applicable law or agreed to in writing, the Writings and
+Discoveries distributed under the License are distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+## Definitions
+
+Presenting arguments, evidence, information, etc. to the Court are
+demonstration purposes. Attorneys personally using the Writings and Discoveries
+for their clients is not commerce, but reselling the Writings and Discoveries
+as a web service or any type of product for sale is commerce.

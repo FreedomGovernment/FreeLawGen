@@ -33,7 +33,7 @@ const SettingsEditor = (props: {
     event: React.MouseEvent<HTMLElement>,
     value: string
   ) => {
-    MetricUnitsSet( 'Standard' ? 'Imperial' : 'Standard')
+    MetricUnitsSet(metric_units == true ? 'Standard' : 'Imperial')
   }
 
   return <div className='flex justify-center h-full'>

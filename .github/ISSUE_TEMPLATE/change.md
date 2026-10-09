@@ -7,12 +7,8 @@ assignees: 'AStarCale'
 ---
 ## Problem
 
-The problem that requires a change is 
+The problem that is so great it requires a Change with Change Control Management is...
 
 ## Solution
 
-The solution is 
-
-## License
-
-Copyright [Freedom Government](https://github.com/FreedomGovernment); all rights reserved.
+The solution is...

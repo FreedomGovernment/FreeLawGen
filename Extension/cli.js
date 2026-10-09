@@ -19,7 +19,7 @@ async function run() {
     repo: '.github',
     path: 'ReadMe.md',
     message: 'BOOP',
-    content: ({ content }) => bumpBoopCounter(content)
+    content: ({ content }) => bumpBoopCounter(content); );
   })
   /*
   const { Data: readme } = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {

@@ -1,7 +1,7 @@
 // Copyright FreedomGovernment; license at https://github.com/FreedomGovernment/FreeLawGen
 
 import React, { useState } from 'react'
-//const { TimestampSeconds } = require('linearid')
+const { TimestampSeconds } = require('linearid')
 import MissionSelector from './MissionSelector'
 import { ModelConfigLocal, ModelConfigLocalSet, ModelConfigSync,
   ModelConfigSyncSet } from '../Model'
@@ -34,7 +34,7 @@ export default function SessionPunchClockViewView(props: {
 
   function TimesheetPunchHandle () {
     if (session == undefined) return
-    const Time = Date.now() / 1000
+    const Time = TimestampSeconds()
     const TimeText = new Date(Time * 1000)
     if(session == 0) { // End Session
       fetch("localhost:3000/api/v1/session", {
@@ -60,7 +60,7 @@ export default function SessionPunchClockViewView(props: {
 
   function TimesheetBreakStartHandle () {
     if (session == undefined) return
-    let time = Date.now() / 1000
+    let time = TimestampSeconds()
     console.log('Starting break from Session #' + session + ' at ' + new Date(time * 1000))
     const ConfigNew = {...(ConfigSync as ModelConfigSync), session: -session}
     ModelConfigSyncSet(ConfigNew)
@@ -125,7 +125,7 @@ export default function SessionPunchClockViewView(props: {
     }
     { OtherMissionSelected && 
     <button onClick={() => {
-      const Timestamp = Date.now() / 1000
+      const Timestamp = TimestampSeconds()
       let {account, mission_ids, repo} = ConfigLocal
       const ConfigNew = { ...ConfigSync, account: account, 
         repo: repo, mission_ids: mission_ids }

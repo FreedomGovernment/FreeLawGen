@@ -4,7 +4,7 @@ Status: Architecture and execution plan; no production deployment authorized by 
 Plan date: 2026-09-10
 Project root: `~/FreedomGovernment/FreeLawGen/`
 Implementation root: `~/FreedomGovernment/FreeLawGen/Web/`
-Proving case: `~/FreedomGovernment/McColloughVsPSU_/`
+Proving case: `~/FreedomGovernment/Cases/CaseX_/`
 
 ## 1. Mission and boundary
 
@@ -33,7 +33,7 @@ This update supersedes older direct-agent-message assumptions for clerk handoffs
 - **Receipts:** Provide a plain-language checklist with pass/fail/pending/not-applicable outcomes, defect reasons, next owner/action, exact artifact ID/version/hash, and authenticated processing provenance. Do not conflate procedural checklist completion with legal sufficiency or merits success. SHA-256 supports integrity comparisons; it does not independently prove authorship, authenticity, court acceptance, or legal validity. No historical novelty claim is made.
 - **Visibility:** A case-authorized web tracking view must expose received, validated, queued, running, blocked, decided and notified states as separate events, including retries, errors, pending acknowledgement, current owner and next procedural step. Distinguish operational states from formal court record status. Show rule/checklist versions, correlation IDs and permitted artifact references, without logging or exposing private document bodies, secrets or other cases. Notification requires delivery evidence.
 - **Reliability:** Persist ready artifacts and durable delivery events with staged commits/reconciliation. Require idempotency, exclusive claims, completed-artifact gates and bounded retries. No false filesystem/database atomicity claim. Lightweight code heartbeats recover stalled work; judges do not busy-poll with LLM calls.
-- **Routing:** Explicit boards are freedom-local-court, freedom-district-court, freedom-appeal-court and freedom-supreme-court. freedom-court is inter-court coordination. freedom-gov is engineering coordination. Party litigation work uses its authorized case board, including mccollough-vs-psu for that case. Never inherit the global current-board pointer.
+- **Routing:** Explicit boards are freedom-local-court, freedom-district-court, freedom-appeal-court and freedom-supreme-court. freedom-court is inter-court coordination. freedom-gov is engineering coordination. Party litigation work uses its authorized case board, including freedom-case-board for that case. Never inherit the global current-board pointer.
 - **Specification inputs:** Clerk/README.md contains the proposed docket-frontmatter and server-reproduction contract. Each court's CourtRules.md in the separately configured FreedomCourt root supplies its procedure; Local/TrialWorkflow.md describes the simplified trial workflow. These are written contracts, not proof of deployed endpoints or enforced permissions. Source paths are configuration references for engineering, not authorization for court actors to browse private folders.
 - **Release gate:** Prioritize a verified upload → receipt/checklist → tracked clerk task vertical slice before unattended trials and cross-court appeals. Test authorization, wrong-board rejection, duplicate delivery, collision/clock handling, crash recovery, checklist clarity and status accuracy using synthetic fixtures. Preserve colleagues' ongoing homepage work. Do not start competing implementation workers, reset the tree, commit, deploy, or send real filings under a status-update task.
 
@@ -426,7 +426,7 @@ Acceptance: repeat ingestion is idempotent; no duplicate documents; source/outpu
 
 ### Phase 2 — Case package round trip
 
-Import `McColloughVsPSU_` into staging and export it into a clean directory.
+Import `CaseX_` into staging and export it into a clean directory.
 
 Acceptance: IDs, Markdown hashes, metadata, relationships, timeline ordering, and validated summaries survive export/import; binary sources are preserved without agents reading them.
 
@@ -483,7 +483,7 @@ Use the actual Next.js 16 documentation installed under `Web/node_modules/next/d
 3. Approve the canonical folder, metadata, LoD, and provenance specifications.
 4. Move or reimplement the MCP prototype under FreeLawGen with path containment and read-only tools.
 5. Design Drizzle migrations for document versions, artifacts, summaries, ingestion, context runs, organizations, and audit events.
-6. Create a 10–20 question McCollough gold retrieval set.
+6. Create a 10–20 question case-name gold retrieval set.
 7. Implement one end-to-end ingestion/context vertical slice.
 8. Establish master-agent's local-first/frontier-escalation budget ledger.
 9. Run security and privacy review before any sensitive GitHub or remote-model integration.

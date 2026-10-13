@@ -56,7 +56,7 @@ test("DecisionFileName — CamelCase title, per-country template", () => {
 })
 
 test("ValidateTag — per-country tag policy", () => {
-  assert.equal(ValidateTag(FreedomCourtRules, "Local", "Mccollough_v_Psu"), "Mccollough_v_Psu")
+  assert.equal(ValidateTag(FreedomCourtRules, "Local", "Smith_v_College"), "Smith_v_College")
   assert.throws(() => ValidateTag(FreedomCourtRules, "Local", "has space"), /Invalid/)
   assert.throws(() => ValidateTag(FreedomCourtRules, "Local", "1starts_with_digit"), /Invalid/)
 })

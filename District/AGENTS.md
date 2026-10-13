@@ -2,7 +2,7 @@
 
 ## Kanban board
 
-This court level belongs to the **Freedom Court** organization; its Kanban board slug is `freedom-district-court` (see `~/FreedomCourt/AGENTS.md`). All Kanban operations for this court level MUST explicitly target `freedom-district-court`. Never rely on the current-board pointer. If a task's assigned board differs, report the mismatch before acting — do not silently switch.
+This court level belongs to the **Freedom Court** organization; its Kanban board slug is `freedom-district-court` (see `~/FreedomGovernment/FreeLawGen/Court/AGENTS.md`). All Kanban operations for this court level MUST explicitly target `freedom-district-court`. Never rely on the current-board pointer. If a task's assigned board differs, report the mismatch before acting — do not silently switch.
 
 Status: Adopted simulation protocol for FreeLawGen civil-court exercises
 Court: District Freedom Court

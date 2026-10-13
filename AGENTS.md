@@ -7,7 +7,7 @@ kind: agent-instructions
 
 ## Kanban board
 
-This project belongs to the **FreedomGovernment** organization; its Kanban board slug is `freedom-gov` (see `~/FreedomGovernment/AGENTS.md`). Always target `freedom-gov` explicitly (`--board freedom-gov` / `board="freedom-gov"`). Court-simulation work belongs on the court-level boards (see `~/FreedomCourt/AGENTS.md`). Never rely on the current-board pointer. If a task's assigned board differs, report the mismatch before acting — do not silently switch.
+This project belongs to the **FreedomGovernment** organization; its Kanban board slug is `freedom-gov` (see `~/FreedomGovernment/AGENTS.md`). Always target `freedom-gov` explicitly (`--board freedom-gov` / `board="freedom-gov"`). Court-simulation work belongs on the court-level boards (see `~/FreedomGovernment/FreeLawGen/Court/AGENTS.md`). Never rely on the current-board pointer. If a task's assigned board differs, report the mismatch before acting — do not silently switch.
 ## 1. Build, Lint, Test Commands
 - **build**: `npm run build` – compiles the application for production.
 - **lint**: `npm run lint` – runs ESLint and Prettier checks.

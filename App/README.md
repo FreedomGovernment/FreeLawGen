@@ -15,7 +15,7 @@ and your model never leave your machine.
 
 ## Why this exists
 
-The McCollough v. Portland State University case — a pro se civil-rights
+The Plaintiff v. State College case — a pro se civil-rights
 complaint — is nationally known. FreeLawGen's mission is **access to justice
 for people without lawyers**, and for States to build their own court systems
 on a shared, deterministic skeleton. The React Native app is the reference

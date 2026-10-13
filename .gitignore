@@ -299,3 +299,8 @@ ModelManifest.xml
 
 # Bun
 bun.lock
+
+# secrets
+.env
+.env.*
+**/.env

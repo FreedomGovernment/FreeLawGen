@@ -129,7 +129,7 @@ Judge decision filename intentionally differs: `YYYY-MM-DD;HH-MM-SS-Title.Decisi
 | Appeal | freedom-appeal-court | freedom-appeal-clerk | freedom-appeal-judge |
 | Supreme | freedom-supreme-court | freedom-supreme-clerk | freedom-supreme-judge |
 
-`freedom-court` is inter-court coordination only. Party work uses a separate configured party board; `mccollough-vs-psu` is this deployment's requested party board, not a universal default. Never infer board from Hermes's current selection. Sort eligible DocketShadow entries first, then Docket, both alphabetically ascending. Verified higher directives route to shadow; otherwise the adopted case-insensitive Emergency title rule determines priority. Priority is not merits approval.
+`freedom-court` is inter-court coordination only. Party work uses a separate configured party board; `freedom-case-board` is this deployment's requested party board, not a universal default. Never infer board from Hermes's current selection. Sort eligible DocketShadow entries first, then Docket, both alphabetically ascending. Verified higher directives route to shadow; otherwise the adopted case-insensitive Emergency title rule determines priority. Priority is not merits approval.
 
 Upload -> durable ready event -> clerk task -> admitted docket + judge task -> judge decision -> clerk processing -> party-board feedback. Use at-least-once transport and idempotent effects, with readiness gates, durable staged commits, and reconciliation after partial filesystem/database failure. Do not claim a filesystem write is atomic with a database transaction. No LLM busy-polling: a lightweight code heartbeat repairs missed deliveries and stale claims. A card is not proof of notice or service.
 

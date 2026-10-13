@@ -8,7 +8,7 @@ Protocol date: 2026-09-11
 
 The Court trial runner receives a public-record case package, not the attorney’s working repository. For the proving case, the source package is:
 
-`~/FreedomGovernment/McColloughVsPSU_/Case/`
+`~/FreedomGovernment/Cases/CaseX_/Case/`
 
 The ordinary path is:
 

@@ -30,7 +30,7 @@ mobile/web app for getting legal documents into the court as Markdown:
   would type or pull from OneDrive/Drive), so a scan and a typed complaint are
   indistinguishable to the clerk and judge.
 
-This is the "get McCollough v. PSU going" workhorse: the existing paper and
+This is the "get Plaintiff v. State College going" workhorse: the existing paper and
 photo record becomes a Markdown docket automatically, instead of being
 re-keyed by hand. It pairs with the REST API + skills (the MCP server in TS)
 that give the legal agents the perfect context — not a command-line tool.
@@ -86,7 +86,7 @@ pleadings, entirely on your machine. See [`App/README.md`](./App/README.md).
 FreeLawGen is a **semi-non-profit, public-benefit** project. It is built for:
 
 - **Regular people** defending themselves in court (self-represented / pro se
-  litigants) — the McCollough v. Portland State University case is the
+  litigants) — the Plaintiff v. State College case is the
   national proof that a pro se civil-rights complaint works.
 - **States** building their own court systems on the shared deterministic
   skeleton.

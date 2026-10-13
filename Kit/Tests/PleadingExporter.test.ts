@@ -13,7 +13,7 @@ import { exportToPleadingPdf } from "../src/court/PleadingExporter"
 
 // A pleading body with a caption block, a party block, a jury-demand line, and
 // enough paragraphs to force a second page. The party name is deliberately NOT
-// any real case (regression guard: the exporter must not special-case McCollough).
+// any real case (regression guard: the exporter must not special-case Plaintiff).
 const CAPTION_FIXTURE = [
   "---",
   'title: "PRIVATE TITLE MUST NOT BECOME THE FOOTER"',

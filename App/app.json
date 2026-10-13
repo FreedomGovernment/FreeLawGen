@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "FreeLawGen",
+    "slug": "freelawgen-app",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#1e293b"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "org.freelawgen.app"
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}

@@ -4,10 +4,10 @@ import React from 'react'
 import { ModelConfigSync, ModelConfigLocal, ModelConfigLocalSet 
 } from '../Model'
 
-const { LLIDNextHex } = require('linearid')
+//const { LLIDNextHex } = require('linearid')
 
 export function ListReposAndIssues(Syndicate: object, account: string,
-    repo: string) {
+ repo: string) {
   let repo_names: string[] = []
   let issue_id_strings: string[] = []
   console.log('Iterating through Syndicates...')
@@ -51,7 +51,8 @@ export function ListReposAndIssues(Syndicate: object, account: string,
 }
 
 // Checks if the issue_num_title starts off with #mission_number_string (i.e #123).
-export function IssueIsSelected(issue_num_title: string, mission_number_string: string) {
+export function IssueIsSelected(issue_num_title: string, 
+ mission_number_string: string) {
   const MLength = mission_number_string.length
   //if(MLength < 1 || issue_num_title.length <= MLength) return false; 
   // Example issue_is_selected: "ABC" or "A123" or "#123 Working example"
@@ -69,11 +70,10 @@ export function IssueIsSelected(issue_num_title: string, mission_number_string: 
 }
 
 export default function MissionSelector(props: { 
-    ConfigLocal    : ModelConfigLocal
-    ConfigLocalSet: (o: ModelConfigLocal) => void
-    ModelConfigSyncSet : (config: ModelConfigSync) => Promise<void>
-    Syndicate: object
-  }) {
+ ConfigLocal    : ModelConfigLocal
+ ConfigLocalSet: (o: ModelConfigLocal) => void
+ ModelConfigSyncSet : (config: ModelConfigSync) => Promise<void>
+ Syndicate: object }) {
   const { ConfigLocal, ConfigLocalSet, Syndicate } = props
   let { account, mission_ids, repo } = ConfigLocal
   console.log('MissionSelector: account:"' + account + '" repo:"' + repo

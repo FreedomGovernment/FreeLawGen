@@ -1,0 +1,67 @@
+{
+  "name": "@freelawgen/court",
+  "version": "0.1.0",
+  "description": "FreeLawGen court toolkit — deterministic, create-only legal-document iteration, docket filename grammar, court levels, and 64-bit SubsecondId case numbers. The open-source API toolkit consumed by FreeLawGen/Web (open web), FreeLawGenWeb_ (for-profit Next.js REST wrapper), and the FreeLawGen console app.",
+  "license": "SEE LICENSE IN LICENSE (AStartup Strong Source-available License)",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./rules": {
+      "types": "./dist/court/Rules.d.ts",
+      "import": "./dist/court/Rules.mjs",
+      "require": "./dist/court/Rules.js"
+    },
+    "./filename": {
+      "types": "./dist/court/Filename.d.ts",
+      "import": "./dist/court/Filename.mjs",
+      "require": "./dist/court/Filename.js"
+    },
+    "./levels": {
+      "types": "./dist/court/Levels.d.ts",
+      "import": "./dist/court/Levels.mjs",
+      "require": "./dist/court/Levels.js"
+    },
+    "./word-count": {
+      "types": "./dist/court/WordCount.d.ts",
+      "import": "./dist/court/WordCount.mjs",
+      "require": "./dist/court/WordCount.js"
+    },
+    "./pleading-pdf": {
+      "types": "./dist/court/PleadingExporter.d.ts",
+      "import": "./dist/court/PleadingExporter.mjs",
+      "require": "./dist/court/PleadingExporter.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test --import tsx 'Tests/**/*.test.ts'",
+    "verify": "node build.mjs && node --test --import tsx 'Tests/**/*.test.ts'"
+  },
+  "peerDependencies": {
+    "@astarship/subsecond-id": "*",
+    "next": ">=14"
+  },
+  "devDependencies": {
+    "@astarship/subsecond-id": "file:/home/astarcale/AStarStarship/SubsecondId/TS",
+    "@types/markdown-it": "^14.2.0",
+    "@types/markdown-it-footnote": "^3.0.4",
+    "@types/node": "^24",
+    "next": "^16.3.5",
+    "tsx": "^4.23.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "docx": "^9.0.0",
+    "markdown-it": "^14.3.2",
+    "markdown-it-footnote": "^4.0.0"
+  }
+}

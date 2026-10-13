@@ -5,14 +5,10 @@ title: 'Artifact'
 labels: ''
 assignees: 'AStarCale'
 ---
-## Artifact Description
+## Description
 
-
+The artifact that is left over from a change is...
 
 ## Files Affected
 
-1. `*.*
-
-## License
-
-Copyright [Freedom Government](https://github.com/FreedomGovernment); all rights reserved.
+1. `?`

@@ -1,12 +1,10 @@
 ---
 name: Incident
 about: A Incident Command System incident; i.e. a real-world event with time, place, etc.
-title: 'Incident. @2023-'
+title: 'Incident @20'
 labels: ''
 assignees: 'AStarCale'
 ---
-
-
 ## Time
 
 
@@ -22,6 +20,6 @@ assignees: 'AStarCale'
 
 
 
-## License
+## A
 
-Copyright [Freedom Government](https://github.com/FreedomGovernment); all rights reserved.
+
